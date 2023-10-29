@@ -1,0 +1,56 @@
+[
+    {
+        "src": "image1.jpg",
+        "description": "Description for image 1",
+        "full-description": "product for bla bla bla 1  ",
+        "category": "kitchen"
+    },
+    {
+        "src": "image2.jpg",
+        "description": "Description for image 2",
+        "full-description": "product for bla bla bla 2 ",
+        "category": "home"
+    },
+    {
+        "src": "image3.jpg",
+        "description": "Description for image 3",
+        "full-description": " product for bla bla bla 3",
+        "category": "home"
+    },
+    {
+        "src": "image4.jpg",
+        "description": "Description for image 4",
+        "full-description": " product for bla bla bla 4",
+        "category": "medical"
+    },
+    {
+        "src": "image5.jpg",
+        "description": "Description for image 5",
+        "full-description": "product for bla bla bla 5",
+        "category": "home"
+    },
+    {
+        "src": "image6.jpg",
+        "description": "Description for image 6",
+        "full-description": "product for bla bla bla 6 ",
+        "category": "medical"
+    },
+    {
+        "src": "image7.jpg",
+        "description": "Description for image 7",
+        "full-description": "product for bla bla bla 7 ",
+        "category": "home"
+    },
+    {
+        "src": "image8.jpg",
+        "description": "Description for image 8",
+        "full-description": "product for bla bla bla 8 ",
+        "category": "kitchen"
+    },
+    {
+        "src": "image9.jpg",
+        "description": "Description for image 9",
+        "full-description": "product for bla bla bla 9 ",
+        "category": "home"
+    }
+]
