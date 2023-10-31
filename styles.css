@@ -171,7 +171,8 @@ body{
   }
 
   #category-nav {
-    margin-top: 135px;
+    top: -5px;
+    margin-top: 140px;
     margin-bottom: -32px;
     align-items: center; /* Center items vertically */
 }
@@ -190,7 +191,7 @@ body{
   grid-template-rows: repeat(5, 150px); /* Change to 3 rows for smaller screens */
   grid-column-gap: 24%; /* Adjust gap between columns */
   grid-row-gap: 15%; /* Adjust gap between rows */
-  margin: 2%; /* Adjust margin for smaller screens */
+  margin: 0%; /* Adjust margin for smaller screens */
   margin-top: 10%;
 }
 
@@ -206,6 +207,30 @@ body{
 
 }
 
+}
 
 
+
+/*RESPONSIVE FOR TABLETS SCREENS */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .cataloug {
+    grid-template-columns: repeat(2, 200px); /* Adjust the number of columns for tablets */
+    grid-template-rows: repeat(3, 200px); /* Adjust the number of rows for tablets */
+    grid-column-gap: 100px; /* Adjust the column gap for better spacing on tablets */
+    grid-row-gap: 100px; /* Adjust the row gap for better spacing on tablets */
+    margin: 50px; /* Adjust the margin for better placement on tablets */
+    left: 50px; /* Adjust the left positioning for tablets */
+    margin-top: 9%; /* Retaining the same top margin */
+  }
+
+  .image {
+    width: 15rem; /* Adjust image size for better fit on tablets */
+    height: auto; /* Allow the height to adjust proportionally */
+  }
+
+  .image-container {
+    width: 250px; /* Adjust container width for tablets */
+    height: 150px; /* Adjust container height for tablets */
+    margin-top: 3%; /* Adjust the top margin for better positioning */
+  }
 }
