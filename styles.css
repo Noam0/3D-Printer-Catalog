@@ -231,6 +231,6 @@ body{
   .image-container {
     width: 250px; /* Adjust container width for tablets */
     height: 150px; /* Adjust container height for tablets */
-    margin-top: 3%; /* Adjust the top margin for better positioning */
+    margin-top: 10%; /* Adjust the top margin for better positioning */
   }
 }
