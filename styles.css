@@ -220,7 +220,7 @@ body{
     grid-row-gap: 100px; /* Adjust the row gap for better spacing on tablets */
     margin: 50px; /* Adjust the margin for better placement on tablets */
     left: 50px; /* Adjust the left positioning for tablets */
-    margin-top: 9%; /* Retaining the same top margin */
+    margin-top: 15%; /* Retaining the same top margin */
   }
 
   .image {
