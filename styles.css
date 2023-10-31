@@ -172,22 +172,22 @@ body{
 
   #category-nav {
     margin-top: 160px;
-    margin-bottom: -30px;
+    margin-bottom: -32px;
     align-items: center; /* Center items vertically */
 }
 
 .category-item {
     font-size: 14px; /* Further decrease font size for smaller screens */
-    margin: 10px 0; /* Adjust margin for better spacing */
+    margin: 5px 0; /* Adjust margin for better spacing */
 }
 
 .cataloug {
   position: relative;
-  left: 2%;
+  left: 0%;
   grid-template-columns: repeat(2, 150px); /* Change to 2 columns for smaller screens */
-  grid-template-rows: repeat(4, 150px); /* Change to 3 rows for smaller screens */
-  grid-column-gap: 20%; /* Adjust gap between columns */
-  grid-row-gap: 17%; /* Adjust gap between rows */
+  grid-template-rows: repeat(5, 150px); /* Change to 3 rows for smaller screens */
+  grid-column-gap: 24%; /* Adjust gap between columns */
+  grid-row-gap: 15%; /* Adjust gap between rows */
   margin: 2%; /* Adjust margin for smaller screens */
   margin-top: 10%;
 }
@@ -203,11 +203,7 @@ body{
   left:30%;
 
 }
-.navigation{
-  position: relative;
-  display: flex;
-  
- 
-  
-}
+
+
+
 }
