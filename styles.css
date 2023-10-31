@@ -87,6 +87,7 @@ body{
 }
 
 
+
 .cataloug{
     position: relative;
     display: grid;
@@ -154,3 +155,59 @@ body{
 }
 
 
+/*RESPONSIVE FOR SMALL SCREENS */
+@media screen and (max-width: 767px) {
+  #banner {
+      height: 18%; /* Adjust the height for better visibility on smaller screens */
+  }
+
+  #headline {
+      font-size: 20px; /* Decrease font size for better readability on smaller screens */
+  }
+
+  #logo {
+      width: 80px; /* Adjust logo size for smaller screens */
+      height: 80px;
+  }
+
+  #category-nav {
+    margin-top: 160px;
+    margin-bottom: -30px;
+    align-items: center; /* Center items vertically */
+}
+
+.category-item {
+    font-size: 14px; /* Further decrease font size for smaller screens */
+    margin: 10px 0; /* Adjust margin for better spacing */
+}
+
+.cataloug {
+  position: relative;
+  left: 2%;
+  grid-template-columns: repeat(2, 150px); /* Change to 2 columns for smaller screens */
+  grid-template-rows: repeat(4, 150px); /* Change to 3 rows for smaller screens */
+  grid-column-gap: 20%; /* Adjust gap between columns */
+  grid-row-gap: 17%; /* Adjust gap between rows */
+  margin: 2%; /* Adjust margin for smaller screens */
+  margin-top: 10%;
+}
+
+.image {
+  width: 140%; /* Allow images to take up full width within their containers */
+  height: 100%; /* Allow images to take up full height within their containers */
+
+}
+
+.description{
+  position: relative;
+  left:30%;
+
+}
+.navigation{
+  position: relative;
+  display: flex;
+  
+ 
+  
+}
+}
