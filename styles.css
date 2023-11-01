@@ -159,7 +159,7 @@ body{
 /*RESPONSIVE FOR SMALL SCREENS */
 @media screen and (max-width: 767px) {
   #banner {
-      height: 15%; /* Adjust the height for better visibility on smaller screens */
+      height: 13%; /* Adjust the height for better visibility on smaller screens */
   }
 
   #headline {
@@ -172,9 +172,9 @@ body{
   }
 
   #category-nav {
-    top: -5px;
+    top: -6px;
     margin-top: 140px;
-    margin-bottom: -32px;
+    margin-bottom: -33px;
     align-items: center; /* Center items vertically */
 }
 
@@ -193,12 +193,12 @@ body{
   grid-column-gap: 24%; /* Adjust gap between columns */
   grid-row-gap: 15%; /* Adjust gap between rows */
   margin: 0%; /* Adjust margin for smaller screens */
-  margin-top: 10%;
+  margin-top: 14%;
 }
 
 .image {
-  width: 147%; /* Allow images to take up full width within their containers */
-  height: 95%; /* Allow images to take up full height within their containers */
+  width: 140%; /* Allow images to take up full width within their containers */
+  height: 88%; /* Allow images to take up full height within their containers */
 
 }
 
