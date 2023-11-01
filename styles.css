@@ -92,14 +92,15 @@ body{
     position: relative;
     display: grid;
     grid-template-columns: repeat(3, 200px);
-    grid-template-rows: repeat(2, 200px);
+    grid-auto-flow: dense;
     grid-column-gap: 260px; /* Adjust the value to reduce the spacing between columns */
     grid-row-gap: 140px; /* Adjust the value to reduce the spacing between rows */
     margin: 100px;
     left:100px;
     margin-top: 9%;
-
 }
+
+
 .image-container{
     display: grid;
     grid-template-rows: 1fr , 1fr;
@@ -188,7 +189,7 @@ body{
   position: relative;
   left: 0%;
   grid-template-columns: repeat(2, 150px); /* Change to 2 columns for smaller screens */
-  grid-template-rows: repeat(5, 150px); /* Change to 3 rows for smaller screens */
+  grid-auto-flow: dense;
   grid-column-gap: 24%; /* Adjust gap between columns */
   grid-row-gap: 15%; /* Adjust gap between rows */
   margin: 0%; /* Adjust margin for smaller screens */
@@ -196,8 +197,8 @@ body{
 }
 
 .image {
-  width: 140%; /* Allow images to take up full width within their containers */
-  height: 100%; /* Allow images to take up full height within their containers */
+  width: 147%; /* Allow images to take up full width within their containers */
+  height: 95%; /* Allow images to take up full height within their containers */
 
 }
 
@@ -215,7 +216,7 @@ body{
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .cataloug {
     grid-template-columns: repeat(2, 200px); /* Adjust the number of columns for tablets */
-    grid-template-rows: repeat(3, 200px); /* Adjust the number of rows for tablets */
+    grid-auto-flow: dense;
     grid-column-gap: 100px; /* Adjust the column gap for better spacing on tablets */
     grid-row-gap: 93px; /* Adjust the row gap for better spacing on tablets */
     margin: 50px; /* Adjust the margin for better placement on tablets */
