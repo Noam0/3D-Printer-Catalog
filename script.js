@@ -129,6 +129,7 @@ function changePicturesDisplay(productsJSON, pageNumber) {
                 if (i + (pageNumber) * 9 >= numberOfProducts) {
                     image.src = 'white.jpg';
                     categoryDescription.innerHTML = '';
+                    description.innerHTML = '';
                 } else {
                     image.src = productsJSON[i + (pageNumber) * 9].src;
                     categoryDescription.innerHTML = productsJSON[i + (pageNumber) * 9].category;
