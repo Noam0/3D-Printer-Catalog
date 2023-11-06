@@ -279,15 +279,27 @@ p[id^='p-description'] {
     justify-content: center;
     width: 50%;
     height: 100px;
-    left: 80px;
+    left: 190px;
     z-index: 999; /* Ensures it's on top of other content */
-    top: 120%;
-    
+    top: 105%;
   }
 
 }
 
+@media screen and (max-width: 280px){
 
+.navigation {
+    position: absolute; /* or 'absolute' depending on your layout needs */
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    left: 140px;
+    z-index: 999; /* Ensures it's on top of other content */
+    top: 170%;
+    
+  }
+}
 
 /*PRODUCTS HTML CSS */
 #product-container{
