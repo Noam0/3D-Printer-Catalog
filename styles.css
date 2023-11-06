@@ -152,10 +152,10 @@ p[id^='p-description'] {
 
 .navigation {
   position: relative;
-  right: 400px;
-  top: 38px;
   display: flex;
   justify-content: center;
+  left:500px;
+  top: -90px;
 }
 
 .navigation a {
@@ -215,6 +215,7 @@ p[id^='p-description'] {
   grid-row-gap: 15%; /* Adjust gap between rows */
   margin: 0%; /* Adjust margin for smaller screens */
   margin-top: 14%;
+ 
 }
 
 .image {
@@ -223,10 +224,41 @@ p[id^='p-description'] {
 
 }
 
+
+
 .description{
   position: relative;
   left:30%;
 
+}
+.navigation {
+  position: absolute; /* or 'absolute' depending on your layout needs */
+  display: inline-block;
+  justify-content: center;
+  width: 50%;
+  height: 100px;
+  left: 160px;
+  z-index: 999; /* Ensures it's on top of other content */
+  top: 170%;
+  
+
+}
+
+.navigation a {
+  text-decoration: underline;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0 5px;
+  margin: 0;
+  color: #003380; /* Change the color */
+  transition: color 0.3s; /* Add a color transition on hover */
+  transition: color 0.3s, text-shadow 0.3s; /* Add transition to text-shadow */
+}
+
+.navigation a:hover {
+  color: #001636; /* Change the color on hover */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
 }
 
 }
@@ -243,6 +275,7 @@ p[id^='p-description'] {
     margin: 50px; /* Adjust the margin for better placement on tablets */
     left: 50px; /* Adjust the left positioning for tablets */
     margin-top: 15%; /* Retaining the same top margin */
+    
   }
 
   .image {

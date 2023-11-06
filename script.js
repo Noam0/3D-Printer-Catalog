@@ -133,6 +133,7 @@ function changePicturesDisplay(productsJSON, pageNumber) {
                 } else {
                     image.src = productsJSON[i + (pageNumber) * 9].src;
                     categoryDescription.innerHTML = productsJSON[i + (pageNumber) * 9].category;
+                    description.textContent = productsJSON[i + (pageNumber) * 9].description;
                 }
             }, 800); // Adjust this timeout as needed
 
@@ -198,7 +199,6 @@ images2.forEach(image => {
         localStorage.setItem('clickedImageFullDescription', fullDescription);
         
 
-        // Redirect to the second page
        
     });
 });
