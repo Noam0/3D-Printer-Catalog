@@ -241,25 +241,9 @@ p[id^='p-description'] {
   z-index: 999; /* Ensures it's on top of other content */
   top: 170%;
   
-
 }
 
-.navigation a {
-  text-decoration: underline;
-  cursor: pointer;
-  border: none;
-  background: none;
-  padding: 0 5px;
-  margin: 0;
-  color: #003380; /* Change the color */
-  transition: color 0.3s; /* Add a color transition on hover */
-  transition: color 0.3s, text-shadow 0.3s; /* Add transition to text-shadow */
-}
 
-.navigation a:hover {
-  color: #001636; /* Change the color on hover */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
-}
 
 }
 
@@ -273,7 +257,7 @@ p[id^='p-description'] {
     grid-column-gap: 100px; /* Adjust the column gap for better spacing on tablets */
     grid-row-gap: 93px; /* Adjust the row gap for better spacing on tablets */
     margin: 50px; /* Adjust the margin for better placement on tablets */
-    left: 50px; /* Adjust the left positioning for tablets */
+    left: 80px; /* Adjust the left positioning for tablets */
     margin-top: 15%; /* Retaining the same top margin */
     
   }
@@ -288,6 +272,19 @@ p[id^='p-description'] {
     height: 150px; /* Adjust container height for tablets */
     margin-top: 10%; /* Adjust the top margin for better positioning */
   }
+
+  .navigation {
+    position: absolute; /* or 'absolute' depending on your layout needs */
+    display: inline-block;
+    justify-content: center;
+    width: 50%;
+    height: 100px;
+    left: 200px;
+    z-index: 999; /* Ensures it's on top of other content */
+    top: 104%;
+    
+  }
+
 }
 
 
