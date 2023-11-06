@@ -279,9 +279,9 @@ p[id^='p-description'] {
     justify-content: center;
     width: 50%;
     height: 100px;
-    left: 200px;
+    left: 80px;
     z-index: 999; /* Ensures it's on top of other content */
-    top: 104%;
+    top: 120%;
     
   }
 
