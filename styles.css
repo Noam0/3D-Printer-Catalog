@@ -1,254 +1,257 @@
 body{
-    background-color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'PT Sans', sans-serif;
-    font-family: 'Rubik', sans-serif;
+  background-color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'PT Sans', sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 #banner {
-    position: fixed;
-    display: flex;
-    z-index: 100;
-    background-color: white;
-    justify-content: center; /* Center horizontally */
-    top: 0;
-    width: 100%;
-    height: 13%;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  display: flex;
+  z-index: 100;
+  background-color: white;
+  justify-content: center; /* Center horizontally */
+  top: 0;
+  width: 100%;
+  height: 13%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 
-    
-    align-items: center; /* Center vertically */
-  }
   
-  #headline {
-    
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'PT Sans', sans-serif;
-   
+  align-items: center; /* Center vertically */
+}
 
-    color: rgb(0, 73, 141);
-    font-size: 30px;
-    margin-right: 20px; /* Adjust the margin value */
-  }
+#headline {
   
-  #logo {
-    position: relative;
-    width: 100px;
-    height: 98px;
-    top: 3%;
-  }
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'PT Sans', sans-serif;
+ 
+
+  color: rgb(0, 73, 141);
+  font-size: 30px;
+  margin-right: 20px; /* Adjust the margin value */
+}
+
+#logo {
+  position: relative;
+  width: 100px;
+  height: 98px;
+  top: 3%;
+}
 
 
 
-  #category-nav {
-    position: relative;
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin-top: 160px;
-    margin-bottom: -90px;
-    justify-content: center;
+#category-nav {
+  position: relative;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-top: 160px;
+  margin-bottom: -90px;
+  justify-content: center;
 }
 
 .category-item-container {
-    margin: 0 40px;
-    position: relative;
+  margin: 0 40px;
+  position: relative;
 }
 
 .category-item {
-    display: inline;
-    cursor: pointer;
-    font-family: 'Arial', sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    color: #003380;
-    text-transform: uppercase;
-    text-decoration: none;
-    
-    letter-spacing: 2px;
-    position: relative;
+  display: inline;
+  cursor: pointer;
+  font-family: 'Arial', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #003380;
+  text-transform: uppercase;
+  text-decoration: none;
+  
+  letter-spacing: 2px;
+  position: relative;
 }
 
 /* Create the line effect under the text */
 .category-item::before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 2px;
-    background-color: #015cbe; /* Color of the line */
-    position: absolute;
-    bottom: -4px; /* Adjust the distance from the text */
-    left: 0;
-    transition: width 0.3s; /* Add a smooth transition effect */
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #015cbe; /* Color of the line */
+  position: absolute;
+  bottom: -4px; /* Adjust the distance from the text */
+  left: 0;
+  transition: width 0.3s; /* Add a smooth transition effect */
 }
 
 .category-item:hover::before {
-    width: 100%; /* Expand the line on hover */
+  width: 100%; /* Expand the line on hover */
 }
 
 
 
 .cataloug{
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(3, 200px);
-    grid-auto-flow: dense;
-    grid-column-gap: 260px; /* Adjust the value to reduce the spacing between columns */
-    grid-row-gap: 140px; /* Adjust the value to reduce the spacing between rows */
-    margin: 100px;
-    left:100px;
-    margin-top: 9%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-auto-flow: dense;
+  grid-column-gap: 260px; /* Adjust the value to reduce the spacing between columns */
+  grid-row-gap: 140px; /* Adjust the value to reduce the spacing between rows */
+  margin: 100px;
+  left:135px;
+  margin-top: 9%;
 }
 
 
 .image-container{
-    display: grid;
-    grid-template-rows: 1fr , 1fr;
-    width: 350px;
-    height: 150px;
-    margin-top: 5%;
+  display: grid;
+  grid-template-rows: 1fr , 1fr;
+  width: 350px;
+  height: 150px;
+  margin-top: 5%;
+  text-align: center;
+
 }
 
 .image {
-    width: 20rem;
-    
-    border: 4px solid white;
-    padding: 4px;
-    box-shadow: 0 2px 6px rgba(0, 5, 0, 0.1);
-    cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s, opacity 1s; /* Combined transitions */
-    opacity: 1;
-  }
+  width: 20rem;
   
-  .image:hover {
-    transform: scale(1.1);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2), 0 0 20px rgba(255, 255, 255, 0.5);
-    opacity: 1; /* Ensure opacity change on hover is smooth */
-  }
-  
-  .hidden {
-    opacity: 0;
-  }
-  
-  .hidden {
-    opacity: 0;
-  }
-
-.description p {
-    margin-bottom: -14px;
-   
+  border: 4px solid white;
+  padding: 4px;
+  box-shadow: 0 2px 6px rgba(0, 5, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s, opacity 1s; /* Combined transitions */
+  opacity: 1;
 }
+
+.image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2), 0 0 20px rgba(255, 255, 255, 0.5);
+  opacity: 1; /* Ensure opacity change on hover is smooth */
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+
+
 
 /* Style the category paragraph */
-p[id^='category-bellow-image'] {
-    font-weight: bold;
-    color: #666;
+p[id^='name-bellow-image'] {
+  position: relative;
+  font-weight: bold;
+  color: #666;
+  font-size: 19px;
+  text-align: center;
+  width: 250px;
+  left: 30px;
 }
 
-/* Style the description paragraph */
-p[id^='p-description'] {
-    color: #333;
-}
+
 
 .navigation {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  left:500px;
-  top: -90px;
+position: relative;
+display: flex;
+justify-content: center;
+left:510px;
+top: -90px;
 }
 
 .navigation a {
-  text-decoration: underline;
-  cursor: pointer;
-  border: none;
-  background: none;
-  padding: 0 5px;
-  margin: 0;
-  color: #003380; /* Change the color */
-  transition: color 0.3s; /* Add a color transition on hover */
-  transition: color 0.3s, text-shadow 0.3s; /* Add transition to text-shadow */
+text-decoration: underline;
+cursor: pointer;
+border: none;
+background: none;
+padding: 0 5px;
+margin: 0;
+color: #003380; /* Change the color */
+transition: color 0.3s; /* Add a color transition on hover */
+transition: color 0.3s, text-shadow 0.3s; /* Add transition to text-shadow */
 }
 
 .navigation a:hover {
-  color: #001636; /* Change the color on hover */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
+color: #001636; /* Change the color on hover */
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
 }
+
 
 
 
 /*RESPONSIVE FOR SMALL SCREENS */
 @media screen and (max-width: 767px) {
-  #banner {
-      height: 13%; /* Adjust the height for better visibility on smaller screens */
-  }
+#banner {
+    height: 13%; /* Adjust the height for better visibility on smaller screens */
+}
 
-  #headline {
-      font-size: 20px; /* Decrease font size for better readability on smaller screens */
-  }
+#headline {
+    font-size: 20px; /* Decrease font size for better readability on smaller screens */
+}
 
-  #logo {
-      width: 80px; /* Adjust logo size for smaller screens */
-      height: 80px;
-  }
+#logo {
+    width: 80px; /* Adjust logo size for smaller screens */
+    height: 80px;
+}
 
 
 #category-nav {
-    top: -6px;
-    margin-top: 145px;
-    margin-bottom: -32px;
-    align-items: center; /* Center items vertically */
-  
+  top: -6px;
+  margin-top: 145px;
+  margin-bottom: -32px;
+  align-items: center; /* Center items vertically */
+
 }
 
 .category-item {
-    font-size: 12px; /* Further decrease font size for smaller screens */
-   
-    
+  font-size: 12px; /* Further decrease font size for smaller screens */
+ 
+  
 }
 
 .category-item-container{
-  margin: 6px 5%; /* Adjust margin for better spacing (5px top and bottom, 0 left and right) */
-  left: 15px
+margin: 6px 5%; /* Adjust margin for better spacing (5px top and bottom, 0 left and right) */
+left: 15px
 }
 
 
 
 .cataloug {
-  position: relative;
-  left: 0%;
-  grid-template-columns: repeat(2, 150px); /* Change to 2 columns for smaller screens */
-  grid-auto-flow: dense;
-  grid-column-gap: 17%; /* Adjust gap between columns */
-  grid-row-gap: 15%; /* Adjust gap between rows */
-  margin: 0%; /* Adjust margin for smaller screens */
-  margin-top: 14%;
- 
+position: relative;
+left: 0%;
+grid-template-columns: repeat(2, 150px); /* Change to 2 columns for smaller screens */
+grid-auto-flow: dense;
+grid-column-gap: 17%; /* Adjust gap between columns */
+grid-row-gap: 15%; /* Adjust gap between rows */
+margin: 0%; /* Adjust margin for smaller screens */
+margin-top: 14%;
+
 }
 
 .image {
-  width: 110%; /* Allow images to take up full width within their containers */
-  height: 75%; /* Allow images to take up full height within their containers */
+width: 110%; /* Allow images to take up full width within their containers */
+height: 75%; /* Allow images to take up full height within their containers */
 
 }
 
 
 
 .description{
-  position: relative;
-  left:30%;
+position: relative;
+left:30%;
 
 }
 .navigation {
-  position: absolute; /* or 'absolute' depending on your layout needs */
-  display: inline-block;
-  justify-content: center;
-  width: 50%;
-  height: 100px;
-  left: 120px;
-  z-index: 999; /* Ensures it's on top of other content */
-  top: 170%;
-  
+position: absolute; /* or 'absolute' depending on your layout needs */
+display: inline-block;
+justify-content: center;
+width: 50%;
+height: 100px;
+left: 120px;
+z-index: 999; /* Ensures it's on top of other content */
+top: 170%;
+
 }
 
 
@@ -259,62 +262,62 @@ p[id^='p-description'] {
 
 /*RESPONSIVE FOR TABLETS SCREENS */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .cataloug {
-    grid-template-columns: repeat(2, 200px); /* Adjust the number of columns for tablets */
-    grid-auto-flow: dense;
-    grid-column-gap: 100px; /* Adjust the column gap for better spacing on tablets */
-    grid-row-gap: 93px; /* Adjust the row gap for better spacing on tablets */
-    margin: 50px; /* Adjust the margin for better placement on tablets */
-    left: 80px; /* Adjust the left positioning for tablets */
-    margin-top: 15%; /* Retaining the same top margin */
-    
-  }
+.cataloug {
+  grid-template-columns: repeat(2, 200px); /* Adjust the number of columns for tablets */
+  grid-auto-flow: dense;
+  grid-column-gap: 100px; /* Adjust the column gap for better spacing on tablets */
+  grid-row-gap: 93px; /* Adjust the row gap for better spacing on tablets */
+  margin: 50px; /* Adjust the margin for better placement on tablets */
+  left: 80px; /* Adjust the left positioning for tablets */
+  margin-top: 15%; /* Retaining the same top margin */
+  
+}
 
-  .image {
-    width: 15rem; /* Adjust image size for better fit on tablets */
-    height: auto; /* Allow the height to adjust proportionally */
-  }
+.image {
+  width: 15rem; /* Adjust image size for better fit on tablets */
+  height: auto; /* Allow the height to adjust proportionally */
+}
 
-  .image-container {
-    width: 250px; /* Adjust container width for tablets */
-    height: 150px; /* Adjust container height for tablets */
-    margin-top: 10%; /* Adjust the top margin for better positioning */
-  }
+.image-container {
+  width: 250px; /* Adjust container width for tablets */
+  height: 150px; /* Adjust container height for tablets */
+  margin-top: 10%; /* Adjust the top margin for better positioning */
+}
 
-  .navigation {
-    position: absolute; /* or 'absolute' depending on your layout needs */
-    display: inline-block;
-    justify-content: center;
-    width: 50%;
-    height: 100px;
-    left: 190px;
-    z-index: 999; /* Ensures it's on top of other content */
-    top: 105%;
-  }
+.navigation {
+  position: absolute; /* or 'absolute' depending on your layout needs */
+  display: inline-block;
+  justify-content: center;
+  width: 50%;
+  height: 100px;
+  left: 190px;
+  z-index: 999; /* Ensures it's on top of other content */
+  top: 105%;
+}
 
 }
 
 @media screen and (max-width: 280px){
 
 .navigation {
-    position: absolute; /* or 'absolute' depending on your layout needs */
-    display: inline-block;
-    justify-content: center;
-    width: 100%;
-    height: 100px;
-    left: 140px;
-    z-index: 999; /* Ensures it's on top of other content */
-    top: 170%;
-    
-  }
+  position: absolute; /* or 'absolute' depending on your layout needs */
+  display: inline-block;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  left: 140px;
+  z-index: 999; /* Ensures it's on top of other content */
+  top: 170%;
+  
+}
 }
 
 @media screen and (width: 1180px) and (height: 820px){
 
 #category-nav{
 
-  left: 220px;
-  margin-bottom: -70px;
+left: 220px;
+margin-bottom: -70px;
 }
 }
 
@@ -326,21 +329,22 @@ p[id^='p-description'] {
 /*PRODUCTS HTML CSS */
 #product-container{
 
-  display: grid;
-  position: relative;
-  grid-template-rows: repeat(2, 90%);
-  bottom: -130px;
+display: grid;
+position: relative;
+grid-template-rows: repeat(2, 90%);
+bottom: -130px;
 }
 
 #clickedImage {
-  width: 34%; /* Define the width of the image to be 60% of its container */
-  margin: 20px auto; /* Add margin for spacing and auto for centering horizontally */
-  display: block; /* Ensures the image does not display inline */
+width:25% ;
+
+margin: 20px auto; /* Add margin for spacing and auto for centering horizontally */
+display: block; /* Ensures the image does not display inline */
 }
 
 #product-full-description {
-  font-family: 'PT Sans', sans-serif;
-  font-size: 18px;
-  color: #333; /* Adjust the color as needed */
-  text-align: center; /* Center the description text */
+font-family: 'PT Sans', sans-serif;
+font-size: 20px;
+color: #333; /* Adjust the color as needed */
+text-align: center; /* Center the description text */
 }

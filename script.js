@@ -1,76 +1,65 @@
 let products = `[
     {
-        "src": "image0.jpg",
-        "description": "Description for image 0",
-        "fullDescription": "product for bla bla bla 0  ",
-        "category": "kitchen"
+        "src": "עיבוי למפתח (1).jpg",
+        "name":"עיבוי למפתח",
+        "fullDescription": "עיבוי להקלה על אחיזת מפתח",
+        "category": "עזרים"
     },
     {
-        "src": "image1.jpg",
-        "description": "Description for image 1",
-        "fullDescription": "product for bla bla bla 1 ",
-        "category": "home"
+        "src": "לוח מחשבת.jpg",
+        "name":"לוח מחשבת",
+        "fullDescription": "משחק מחשבת לתרגול ושיפור מיומנויות מוטוריקה עדינה. לוח המשחק בגודל 10×10 סנטימטר. גודל פין המשחק: קוטר 0.5 סנטימטר גובה 2 סנטימטר.",
+        "category": "משחקים ואביזרי טיפול"
     },
     {
-        "src": "image2.jpg",
-        "description": "Description for image 2",
-        "fullDescription": " product for bla bla bla 2",
-        "category": "home"
+        "src": "מחזיק קלפים.jpg",
+        "name":"מחזיק קלפים",
+        "fullDescription": "מתקן לקלפים, מאפשר שימוש בקלפים בגודל סטנדרטי ו/או גדולים",
+        "category": "משחקים ואביזרי טיפול"
     },
     {
-        "src": "image3.jpg",
-        "description": "Description for image 3",
-        "fullDescription": " product for bla bla bla 3",
-        "category": "medical"
+        "src": "משחק- לוח דיסקיות.jpg",
+        "name":"לוח דיסקיות",
+        "fullDescription": "משחק לחיזוק חגורת כתפיים ומיומנויות קוגניטיביות. ניתן להדפיס את תושבות הדיסקים ותושבת המגנט.",
+        "category": "משחקים ואביזרי טיפול"
     },
     {
-        "src": "image4.jpg",
-        "description": "Description for image 4",
-        "fullDescription": "product for bla bla bla 4",
-        "category": "home"
+        "src": "קופסת קלפים.jpg",
+        "name":"קופסת קלפים",
+        "fullDescription": "מתקן לקלפים. מאפשר שימוש בקלפים בגודל סטנדרטי ו/או גדולים.",
+        "category": "משחקים ואביזרי טיפול"
     },
     {
-        "src": "image5.jpg",
-        "description": "Description for image 5",
-        "fullDescription": "product for bla bla bla 5 ",
-        "category": "medical"
+        "src": "מתקן אחיזה לכוס.jpg",
+        "name":"מתקן לכוס",
+        "fullDescription": "מתקן לאחיזה גסה של כוס בגודל כוס חד פעמית לשתיה קרה/חמה. מקל על אחיזת הכוס במקרה של חולשת אצבעות.",
+        "category": "אכילה ושתיה"
     },
     {
-        "src": "image6.jpg",
-        "description": "Description for image 6",
-        "fullDescription": "product for bla bla bla 6 ",
-        "category": "home"
+        "src": "מתלה להליכון בצורת S.jpg",
+        "name":"S מתלה להליכון בצורת",
+        "fullDescription": "מתלה בצורת s לתליה בחלק הקדמי של ההליכון.",
+        "category": "עזרים"
     },
     {
-        "src": "image7.jpg",
-        "description": "Description for image 7",
-        "fullDescription": "product for bla bla bla 7 ",
-        "category": "kitchen"
+        "src": "מתלה להליכון.jpg",
+        "name":"מתלה צר להליכון",
+        "fullDescription": "מתלה צר להליכון. נתלה בעזרת אזיקון. מתאים לכל אחד מעמודי ההליכון",
+        "category": "עזרים"
     },
     {
-        "src": "image8.jpg",
-        "description": "Description for image 8",
-        "fullDescription": "product for bla bla bla 8 ",
-        "category": "home"
-    },
-    {
-        "src": "image9.jpg",
-        "description": "Description for image 9",
-        "fullDescription": "product for bla bla bla 9 ",
-        "category": "medical"
-    },
-    {
-        "src": "image10.jpg",
-        "description": "Description for image 10",
-        "fullDescription": "product for bla bla bla 10 ",
-        "category": "home"
+        "src": "תופסן לקשית.jpg",
+        "name":"תופסן לקשית",
+        "fullDescription": "מתקן לתפיסת קשית. מקל על שתיה בקרב אנשים עם חולשה בידיים. מגיע במספר גדלים בהתאם לעובי דופן הכוס",
+        "category": "אכילה ושתיה"
     }
+
 ]`;
 
 let productsJSON = JSON.parse(products);
 let pageNumber = 0;
-let categories = ["all", "kitchen", "home", "medical"];
-let chosenCategory = "all";
+let categories = ["הכל", "משחקים ואביזרי טיפול", "אכילה ושתיה", "עזרים"];
+let chosenCategory = "הכל";
 let numberOfPages;
 let numberOfProducts = productsJSON.length;
 //the div images element:
@@ -84,10 +73,10 @@ function onPageLoad() {
   
     for(let i = 0 ; i < 9 ; i++){
          let image = document.querySelector(`#image${i}`);
-         let description = document.querySelector(`p-description${i}`);
-         let categoryDescription = document.querySelector(`#category-bellow-image${i}`)
-         categoryDescription.textContent =("category: " + productsJSON[i].category);
+         let nameOfProduct = document.querySelector(`#name-bellow-image${i}`)
+         nameOfProduct.textContent =(productsJSON[i].name);
          image.src = productsJSON[i].src;
+         
     }
   
 }
@@ -95,55 +84,55 @@ function onPageLoad() {
 //FUNCTION TO SORT THE ARRAY OF PRODUCTS BY CATEGORY
 function sortProducts(productsJSON, chosenCategory) {
 
-    if(chosenCategory === 'all'){
+    if(chosenCategory === 'הכל'){
      let sortedProducts = JSON.parse(products);
      return sortedProducts;
     }else{
     // First, filter the products by the chosen category
     const chosenCategoryProducts = productsJSON.filter(product => product.category === chosenCategory);
-    
-    // Then, filter the products excluding the chosen category
-    const otherCategoryProducts = productsJSON.filter(product => product.category !== chosenCategory);
-    
-    // Concatenate the chosen category products with the other category products
-    const sortedProducts = chosenCategoryProducts.concat(otherCategoryProducts);
-    
-    return sortedProducts;
+        
+    console.log(chosenCategoryProducts);
+   
+    return chosenCategoryProducts;
     }
 }
 
 function changePicturesDisplay(productsJSON, pageNumber) {
-    for (let i = 0; i < 9 && i < productsJSON.length; i++) {
+
+    numberOfProducts = productsJSON.length;
+    
+    for (let i = 0; i < 9 ; i++) {
         let image = document.querySelector(`#image${i}`);
-        let description = document.querySelector(`#p-description${i}`);
-        let categoryDescription = document.querySelector(`#category-bellow-image${i}`);
+        //let description = document.querySelector(`#p-description${i}`);
+        let nameOfProduct = document.querySelector(`#name-bellow-image${i}`);
 
         if (image) {
             // Apply a fade out effect by reducing opacity to 0
             image.style.opacity = 0;
-            categoryDescription.style.opacity = 0;
-            description.style.opacity = 0;
+            nameOfProduct.style.opacity = 0;
 
             // Change the image source
             setTimeout(() => {
                 if (i + (pageNumber) * 9 >= numberOfProducts) {
                     image.src = 'white.jpg';
-                    categoryDescription.innerHTML = '';
-                    description.innerHTML = '';
+                    nameOfProduct.innerHTML = '';
+                    
                 } else {
                     image.src = productsJSON[i + (pageNumber) * 9].src;
-                    categoryDescription.innerHTML = productsJSON[i + (pageNumber) * 9].category;
-                    description.textContent = productsJSON[i + (pageNumber) * 9].description;
+                    nameOfProduct.innerHTML = productsJSON[i + (pageNumber) * 9].name;
+                   
                 }
             }, 800); // Adjust this timeout as needed
 
             // Apply a fade in effect by increasing opacity to 1 after a delay
             setTimeout(() => {
                 image.style.opacity = 1;
-                categoryDescription.style.opacity = 1;
-                description.style.opacity = 1;
+                nameOfProduct.style.opacity = 1;
+                
             }, 850); // Should be greater than the previous timeout
         }
+
+        
     }
 }
 //ON CLICK FUNCTION ON EACH CATEGORY THAT WAS CLICKED:
@@ -152,7 +141,8 @@ categoryItems.forEach(item => {
     item.addEventListener('click', function() {
         const category = item.getAttribute('data-category');
         console.log(`You clicked on category: ${category}`);
-        productsJSON = sortProducts(productsJSON,category);
+        let newProductsJson = JSON.parse(products);
+        productsJSON = sortProducts(newProductsJson,category);
         pageNumber = 0;
         changePicturesDisplay(productsJSON , 0);
     });
@@ -189,7 +179,10 @@ if(pageNumber > 0){
 const images2 = document.querySelectorAll('.cataloug img');
 
 images2.forEach(image => {
+
     image.addEventListener('click', function() {
+
+      
         console.log('clicked Image ID:', image.id);
         console.log('clicked image source:', image.src);
 

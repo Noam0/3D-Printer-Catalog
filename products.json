@@ -1,69 +1,57 @@
 [
     {
-        "src": "image0.jpg",
-        "description": "Description for image 0",
-        "full-description": "product for bla bla bla 1  ",
-        "category": "kitchen"
+        "src": "עיבוי למפתח (1).jpg",
+        "name":"עיבוי למפתח",
+        "fullDescription": "עיבוי להקלה על אחיזת מפתח",
+        "category": "עזרים"
     },
     {
-        "src": "image1.jpg",
-        "description": "Description for image 1",
-        "full-description": "product for bla bla bla 1 ",
-        "category": "home"
+        "src": "לוח מחשבת.jpg",
+        "name":"לוח מחשבת",
+        "fullDescription": "משחק מחשבת לתרגול ושיפור מיומנויות מוטוריקה עדינה. לוח המשחק בגודל 10×10 סנטימטר. גודל פין המשחק: קוטר 0.5 סנטימטר גובה 2 סנטימטר.",
+        "category": "משחקים ואביזרי טיפול"
     },
     {
-        "src": "image2.jpg",
-        "description": "Description for image 2",
-        "full-description": " product for bla bla bla 2",
-        "category": "home"
+        "src": "מחזיק קלפים.jpg",
+        "name":"מחזיק קלפים",
+        "fullDescription": "מתקן לקלפים, מאפשר שימוש בקלפים בגודל סטנדרטי ו/או גדולים",
+        "category": "משחקים ואביזרי טיפול"
     },
     {
-        "src": "image3.jpg",
-        "description": "Description for image 3",
-        "full-description": " product for bla bla bla 3",
-        "category": "medical"
+        "src": "משחק- לוח דיסקיות.jpg",
+        "name":"לוח דיסקיות",
+        "fullDescription": "משחק לחיזוק חגורת כתפיים ומיומנויות קוגניטיביות. ניתן להדפיס את תושבות הדיסקים ותושבת המגנט.",
+        "category": "משחקים ואביזרי טיפול"
     },
     {
-        "src": "image4.jpg",
-        "description": "Description for image 4",
-        "full-description": "product for bla bla bla 4",
-        "category": "home"
+        "src": "קופסת קלפים.jpg",
+        "name":"קופסת קלפים",
+        "fullDescription": "מתקן לקלפים. מאפשר שימוש בקלפים בגודל סטנדרטי ו/או גדולים.",
+        "category": "משחקים ואביזרי טיפול"
     },
     {
-        "src": "image5.jpg",
-        "description": "Description for image 5",
-        "full-description": "product for bla bla bla 5 ",
-        "category": "medical"
+        "src": "מתקן אחיזה לכוס.jpg",
+        "name":"מתקן לכוס",
+        "fullDescription": "מתקן לאחיזה גסה של כוס בגודל כוס חד פעמית לשתיה קרה/חמה. מקל על אחיזת הכוס במקרה של חולשת אצבעות.",
+        "category": "אכילה ושתיה"
     },
     {
-        "src": "image6.jpg",
-        "description": "Description for image 6",
-        "full-description": "product for bla bla bla 6 ",
-        "category": "home"
+        "src": "מתלה להליכון בצורת S.jpg",
+        "name":"S מתלה להליכון בצורת",
+        "fullDescription": "מתלה בצורת s לתליה בחלק הקדמי של ההליכון.",
+        "category": "עזרים"
     },
     {
-        "src": "image7.jpg",
-        "description": "Description for image 7",
-        "full-description": "product for bla bla bla 7 ",
-        "category": "kitchen"
+        "src": "מתלה להליכון.jpg",
+        "name":"מתלה צר להליכון",
+        "fullDescription": "מתלה צר להליכון. נתלה בעזרת אזיקון. מתאים לכל אחד מעמודי ההליכון",
+        "category": "עזרים"
     },
     {
-        "src": "image8.jpg",
-        "description": "Description for image 8",
-        "full-description": "product for bla bla bla 8 ",
-        "category": "home"
-    },
-    {
-        "src": "image9.jpg",
-        "description": "Description for image 9",
-        "full-description": "product for bla bla bla 9 ",
-        "category": "medical"
-    },
-    {
-        "src": "image10.jpg",
-        "description": "Description for image 10",
-        "full-description": "product for bla bla bla 10 ",
-        "category": "home"
+        "src": "תופסן לקשית.jpg",
+        "name":"תופסן לקשית",
+        "fullDescription": "מתקן לתפיסת קשית. מקל על שתיה בקרב אנשים עם חולשה בידיים. מגיע במספר גדלים בהתאם לעובי דופן הכוס",
+        "category": "אכילה ושתיה"
     }
 
 ]
