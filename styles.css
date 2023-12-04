@@ -200,18 +200,23 @@ text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
   top: -6px;
   margin-top: 145px;
   margin-bottom: -32px;
-  align-items: center; /* Center items vertically */
-
+  display: flex;
+  flex-direction: row; /* Set flex direction to row */
+  align-items: center;
+  justify-content: center; /* Center items horizontally */;
+  position: relative;
+  right: 12px;
 }
 
 .category-item {
-  font-size: 12px; /* Further decrease font size for smaller screens */
- 
-  
+  font-size: 12px;
+  text-align: center;
+  list-style: none;
+  padding: 0px 0px; /* Adjust padding for less space */
 }
 
 .category-item-container{
-margin: 6px 5%; /* Adjust margin for better spacing (5px top and bottom, 0 left and right) */
+margin: 2px 12px; /* Adjust margin for better spacing (5px top and bottom, 0 left and right) */
 left: 15px
 }
 
@@ -219,27 +224,26 @@ left: 15px
 
 .cataloug {
 position: relative;
-left: 0%;
+left: 2%;
 grid-template-columns: repeat(2, 150px); /* Change to 2 columns for smaller screens */
 grid-auto-flow: dense;
-grid-column-gap: 17%; /* Adjust gap between columns */
-grid-row-gap: 15%; /* Adjust gap between rows */
+grid-column-gap: 14%; /* Adjust gap between columns */
+grid-row-gap: 3%; /* Adjust gap between rows */
 margin: 0%; /* Adjust margin for smaller screens */
 margin-top: 14%;
 
 }
 
 .image {
-width: 110%; /* Allow images to take up full width within their containers */
-height: 75%; /* Allow images to take up full height within their containers */
+width: 100%; /* Allow images to take up full width within their containers */
+height: 68%; /* Allow images to take up full height within their containers */
 
 }
 
 
-
 .description{
 position: relative;
-left:30%;
+right: 45%;
 
 }
 .navigation {
@@ -250,11 +254,13 @@ width: 50%;
 height: 100px;
 left: 120px;
 z-index: 999; /* Ensures it's on top of other content */
-top: 170%;
+top: 112%;
 
 }
 
-
+p{
+  font-size: 15px;
+}
 
 }
 
@@ -262,6 +268,10 @@ top: 170%;
 
 /*RESPONSIVE FOR TABLETS SCREENS */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+
+#banner{
+  height: 12%;
+}
 .cataloug {
   grid-template-columns: repeat(2, 200px); /* Adjust the number of columns for tablets */
   grid-auto-flow: dense;
@@ -290,10 +300,21 @@ top: 170%;
   justify-content: center;
   width: 50%;
   height: 100px;
-  left: 190px;
+  left: 196px;
   z-index: 999; /* Ensures it's on top of other content */
   top: 105%;
 }
+.category-item{
+  font-size: 20px;
+
+}
+
+.description{
+  position: relative;
+  right: 15%;
+  
+  }
+
 
 }
 
