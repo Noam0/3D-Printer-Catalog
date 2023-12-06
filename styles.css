@@ -16,7 +16,6 @@ body{
   height: 13%;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 
-  
   align-items: center; /* Center vertically */
 }
 
@@ -24,7 +23,7 @@ body{
   
   font-family: 'Montserrat', sans-serif;
   font-family: 'PT Sans', sans-serif;
- 
+  letter-spacing: 0px;
 
   color: rgb(0, 73, 141);
   font-size: 30px;
@@ -65,7 +64,7 @@ body{
   text-transform: uppercase;
   text-decoration: none;
   
-  letter-spacing: 2px;
+  letter-spacing: 0px;
   position: relative;
 }
 
@@ -190,13 +189,17 @@ text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
 }
 
 #headline {
-    font-size: 20px; /* Decrease font size for better readability on smaller screens */
+    font-size: 19px; /* Decrease font size for better readability on smaller screens */
+    letter-spacing: -1px;
 }
 
 #logo {
+    position: relative;
     width: 80px; /* Adjust logo size for smaller screens */
     height: 80px;
+    right: 18px;
 }
+
 
 
 #category-nav {
@@ -212,10 +215,11 @@ text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
 }
 
 .category-item {
-  font-size: 10px;
+  font-size: 12px;
   text-align: center;
   list-style: none;
   padding: 0px 3px; /* Adjust padding for less space */
+  letter-spacing: 0px;
  
 }
 
