@@ -196,5 +196,33 @@ images2.forEach(image => {
     });
 });
 
+const nameOfProducts = document.querySelectorAll('.nameOfProduct');
+
+nameOfProducts.forEach(productName =>{
+
+    productName.addEventListener('click', function() {
+
+        const clickedProductName = this.textContent;
+
+        const parsedProducts = JSON.parse(products);
+        let productSrc;
+        let fullDescription;
+        for (const product of parsedProducts) {
+            if (product.name === clickedProductName) {
+                productSrc = product.src;
+                fullDescription = product.fullDescription;
+            }
+        }
+
+        console.log('clicked image source:', productSrc);
+
+        localStorage.setItem('clickedImageSrc', productSrc);
+        localStorage.setItem('clickedImageFullDescription', fullDescription);
+        
+
+       
+    });
+
+});
 
 
