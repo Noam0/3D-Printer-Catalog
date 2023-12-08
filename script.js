@@ -118,7 +118,7 @@ function changePicturesDisplay(productsJSON, pageNumber) {
                     nameOfProduct.innerHTML = '';
                     
                 } else {
-                    image.src = productsJSON[i + (pageNumber) * 9].src;
+                    image.src = productsJSON[i + (pageNumber) * 9].src[0];
                     nameOfProduct.innerHTML = productsJSON[i + (pageNumber) * 9].name;
                    
                 }
@@ -175,8 +175,6 @@ if(pageNumber > 0){
 });
 
 
-
-/// START THE CHANGE NOW
 
 
 
