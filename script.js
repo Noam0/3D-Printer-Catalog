@@ -1,54 +1,54 @@
 let products = `[
     {
-        "src": "עיבוי למפתח (1).jpg",
+        "src": ["עיבוי למפתח (1).jpg", "עיבוי למפתח.jpg"],
         "name":"עיבוי למפתח",
         "fullDescription": ".עיבוי להקלה על אחיזת מפתח",
         "category": "עזרים"
     },
     {
-        "src": "לוח מחשבת.jpg",
+        "src":["לוח מחשבת.jpg"],
         "name":"לוח מחשבת",
         "fullDescription": ".משחק מחשבת לתרגול ושיפור מיומנויות מוטוריקה עדינה. לוח המשחק בגודל 10×10 סנטימטר. גודל פין המשחק: קוטר 0.5 סנטימטר גובה 2 סנטימטר",
         "category": "משחקים ואביזרי טיפול"
     },
     {
-        "src": "מחזיק קלפים.jpg",
+        "src": ["מחזיק קלפים.jpg"],
         "name":"מחזיק קלפים",
         "fullDescription": ".מתקן לקלפים, מאפשר שימוש בקלפים בגודל סטנדרטי ו/או גדולים",
         "category": "משחקים ואביזרי טיפול"
     },
     {
-        "src": "משחק- לוח דיסקיות.jpg",
+        "src":["משחק- לוח דיסקיות.jpg"],
         "name":"לוח דיסקיות",
         "fullDescription": ".משחק לחיזוק חגורת כתפיים ומיומנויות קוגניטיביות. ניתן להדפיס את תושבות הדיסקים ותושבת המגנט",
         "category": "משחקים ואביזרי טיפול"
     },
     {
-        "src": "קופסת קלפים.jpg",
+        "src":["קופסת קלפים.jpg"],
         "name":"קופסת קלפים",
         "fullDescription": "מתקן לקלפים. מאפשר שימוש בקלפים בגודל סטנדרטי ו/או גדולים.",
         "category": "משחקים ואביזרי טיפול"
     },
     {
-        "src": "מתקן אחיזה לכוס.jpg",
+        "src": ["מתקן אחיזה לכוס.jpg", "מתקן אחיזה לכוס .jpg"],
         "name":"מתקן לכוס",
         "fullDescription": ".מתקן לאחיזה גסה של כוס בגודל כוס חד פעמית לשתיה קרה/חמה. מקל על אחיזת הכוס במקרה של חולשת אצבעות",
         "category": "אכילה ושתיה"
     },
     {
-        "src": "מתלה להליכון בצורת S.jpg",
+        "src": ["מתלה להליכון בצורת S.jpg", "מתלה להליכון בצורת S (1).jpg", "מתלה להליכון בצורת S (2).jpg"],
         "name":"S מתלה להליכון בצורת",
         "fullDescription": "מתלה לתליה בחלק הקדמי של ההליכון",
         "category": "עזרים"
     },
     {
-        "src": "מתלה להליכון.jpg",
+        "src":["מתלה להליכון.jpg","מתלה להליכון (1).jpg"],
         "name":"מתלה צר להליכון",
         "fullDescription": "מתלה צר להליכון. נתלה בעזרת אזיקון. מתאים לכל אחד מעמודי ההליכון",
         "category": "עזרים"
     },
     {
-        "src": "תופסן לקשית.jpg",
+        "src": ["תופסן לקשית.jpg"],
         "name":"תופסן לקשית",
         "fullDescription": ".מתקן לתפיסת קשית. מקל על שתיה בקרב אנשים עם חולשה בידיים. מגיע במספר גדלים בהתאם לעובי דופן הכוס",
         "category": "אכילה ושתיה"
@@ -75,7 +75,7 @@ function onPageLoad() {
          let image = document.querySelector(`#image${i}`);
          let nameOfProduct = document.querySelector(`#name-bellow-image${i}`)
          nameOfProduct.textContent =(productsJSON[i].name);
-         image.src = productsJSON[i].src;
+         image.src = productsJSON[i].src[0];
          
     }
   
@@ -175,24 +175,28 @@ if(pageNumber > 0){
 });
 
 
+
+/// START THE CHANGE NOW
+
+
+
+
+
+
 //////PRODUCT PAGE//////
 const images2 = document.querySelectorAll('.cataloug img');
 
 images2.forEach(image => {
-
     image.addEventListener('click', function() {
-
-      
         console.log('clicked Image ID:', image.id);
         console.log('clicked image source:', image.src);
 
-        localStorage.setItem('clickedImageSrc', image.src);
         const productIndex = parseInt(image.id.split('image')[1]);
         const fullDescription = productsJSON[productIndex].fullDescription;
-        localStorage.setItem('clickedImageFullDescription', fullDescription);
-        
 
-       
+        // Store the entire array of image sources for the clicked product
+        localStorage.setItem('clickedImageSrc', JSON.stringify(productsJSON[productIndex].src));
+        localStorage.setItem('clickedImageFullDescription', fullDescription);
     });
 });
 
@@ -209,7 +213,7 @@ nameOfProducts.forEach(productName =>{
         let fullDescription;
         for (const product of parsedProducts) {
             if (product.name === clickedProductName) {
-                productSrc = product.src;
+                productSrc = JSON.stringify(product.src);
                 fullDescription = product.fullDescription;
             }
         }
