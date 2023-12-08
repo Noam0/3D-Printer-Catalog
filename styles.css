@@ -194,13 +194,15 @@ text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
 #headline {
     font-size: 19px; /* Decrease font size for better readability on smaller screens */
     letter-spacing: -1px;
+   
 }
 
 #logo {
     position: relative;
     width: 80px; /* Adjust logo size for smaller screens */
     height: 80px;
-    right: 18px;
+    right: 9px;
+    margin-left: -10px;
 }
 
 
