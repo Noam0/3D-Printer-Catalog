@@ -53,6 +53,7 @@ let products = `[
         "fullDescription": ".מתקן לתפיסת קשית. מקל על שתיה בקרב אנשים עם חולשה בידיים. מגיע במספר גדלים בהתאם לעובי דופן הכוס",
         "category": "אכילה ושתיה"
     }
+   
 
 ]`;
 
@@ -68,7 +69,7 @@ const imageContainers = document.querySelectorAll('.cataloug .image-container');
 document.addEventListener('DOMContentLoaded', onPageLoad);
 
 function onPageLoad() {
-    numberOfPages = Math.floor(numberOfProducts / 9) + 1;
+    numberOfPages = Math.floor((numberOfProducts-1) / 9);
     chosenCategory = "all"
   
     for(let i = 0 ; i < 9 ; i++){
@@ -154,7 +155,7 @@ categoryItems.forEach(item => {
 const nextButton = document.getElementById('next');
 nextButton.addEventListener('click' , ()=>{
 
-if(pageNumber < numberOfPages -1){
+if(pageNumber < numberOfPages){
     pageNumber++;
     changePicturesDisplay(productsJSON,pageNumber);
 }else{
@@ -190,10 +191,10 @@ images2.forEach(image => {
         console.log('clicked image source:', image.src);
 
         const productIndex = parseInt(image.id.split('image')[1]);
-        const fullDescription = productsJSON[productIndex].fullDescription;
+        const fullDescription = productsJSON[productIndex + (9 * pageNumber)].fullDescription;
 
         // Store the entire array of image sources for the clicked product
-        localStorage.setItem('clickedImageSrc', JSON.stringify(productsJSON[productIndex].src));
+        localStorage.setItem('clickedImageSrc', JSON.stringify(productsJSON[productIndex + (9 * pageNumber)].src));
         localStorage.setItem('clickedImageFullDescription', fullDescription);
     });
 });
