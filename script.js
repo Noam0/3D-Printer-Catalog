@@ -52,18 +52,11 @@ let products = `[
         "name":"תופסן לקשית",
         "fullDescription": ".מתקן לתפיסת קשית. מקל על שתיה בקרב אנשים עם חולשה בידיים. מגיע במספר גדלים בהתאם לעובי דופן הכוס",
         "category": "אכילה ושתיה"
-    },
- {
-        "src": ["1024px-Google-Apps.jpeg"],
-        "name":"בדיקה",
-        "fullDescription": ".מתקן לתפיסת קשית. מקל על שתיה בקרב אנשים עם חולשה בידיים. מגיע במספר גדלים בהתאם לעובי דופן הכוס",
-        "category": "אכילה ושתיה"
     }
-  
 
 ]`;
 
-let productsJSON = JSON.parse(products);
+let productsJSON = JSON.parse(products);s
 let pageNumber = 0;
 let categories = ["הכל", "משחקים ואביזרי טיפול", "אכילה ושתיה", "עזרים"];
 let chosenCategory = "הכל";
